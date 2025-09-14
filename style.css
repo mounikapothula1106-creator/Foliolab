@@ -1,0 +1,166 @@
+/* Color Palette */
+:root {
+    --dark-olive: #606c38;
+    --deep-green: #283618;
+    --cream: #fefae0;
+    --warm-orange: #dda15e;
+    --burnt-orange: #bc6c25;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cream);
+    color: var(--deep-green);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--dark-olive);
+    color: var(--cream);
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Search Input */
+.hero input {
+    padding: 10px;
+    width: 50%;
+    border: 2px solid var(--warm-orange);
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Buttons */
+.hero button,
+.plan button {
+    padding: 10px 20px;
+    background: var(--warm-orange);
+    color: var(--cream);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover,
+.plan button:hover {
+    background: var(--burnt-orange);
+}
+
+/* Featured Freelancers */
+.featured {
+    background: var(--cream);
+    padding: 50px 0;
+}
+
+.freelancer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.freelancer {
+    background: var(--deep-green);
+    color: var(--cream);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.freelancer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 50px 0;
+    background: var(--dark-olive);
+    color: var(--cream);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    background: var(--warm-orange);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--deep-green);
+    font-weight: bold;
+}
+
+/* Pricing Plans */
+.pricing {
+    background: var(--cream);
+    padding: 50px 0;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background: var(--deep-green);
+    color: var(--cream);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plan.premium {
+    background: var(--burnt-orange);
+}
+
+/* Testimonials */
+.testimonials {
+    background: var(--warm-orange);
+    color: var(--deep-green);
+    padding: 50px 0;
+}
+
+/* Footer */
+footer {
+    background: var(--deep-green);
+    color: var(--cream);
+    padding: 20px 0;
+}
+
+footer nav a {
+    color: var(--cream);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .freelancer-grid, .plans, .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero input {
+        width: 80%;
+    }
+}
